@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7D3B3DB71CD7813E00C17768 /* DynamicCoreDataFrameworkPOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3B3DB61CD7813E00C17768 /* DynamicCoreDataFrameworkPOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D3B3DC01CD7826A00C17768 /* PersonModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B3DBE1CD7826A00C17768 /* PersonModel.xcdatamodeld */; };
+		7D3B3DC31CD7835A00C17768 /* PersonModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B3DC11CD7835A00C17768 /* PersonModel+CoreDataProperties.swift */; };
+		7D3B3DC41CD7835A00C17768 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B3DC21CD7835A00C17768 /* PersonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D3B3DB31CD7813E00C17768 /* DynamicCoreDataFrameworkPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicCoreDataFrameworkPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3B3DB61CD7813E00C17768 /* DynamicCoreDataFrameworkPOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicCoreDataFrameworkPOC.h; sourceTree = "<group>"; };
 		7D3B3DB81CD7813E00C17768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3B3DBF1CD7826A00C17768 /* PersonModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonModel.xcdatamodel; sourceTree = "<group>"; };
+		7D3B3DC11CD7835A00C17768 /* PersonModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersonModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7D3B3DC21CD7835A00C17768 /* PersonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +52,11 @@
 		7D3B3DB51CD7813E00C17768 /* DynamicCoreDataFrameworkPOC */ = {
 			isa = PBXGroup;
 			children = (
+				7D3B3DC11CD7835A00C17768 /* PersonModel+CoreDataProperties.swift */,
+				7D3B3DC21CD7835A00C17768 /* PersonModel.swift */,
 				7D3B3DB61CD7813E00C17768 /* DynamicCoreDataFrameworkPOC.h */,
 				7D3B3DB81CD7813E00C17768 /* Info.plist */,
+				7D3B3DBE1CD7826A00C17768 /* PersonModel.xcdatamodeld */,
 			);
 			path = DynamicCoreDataFrameworkPOC;
 			sourceTree = "<group>";
@@ -130,6 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3B3DC31CD7835A00C17768 /* PersonModel+CoreDataProperties.swift in Sources */,
+				7D3B3DC01CD7826A00C17768 /* PersonModel.xcdatamodeld in Sources */,
+				7D3B3DC41CD7835A00C17768 /* PersonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +242,7 @@
 		7D3B3DBC1CD7813E00C17768 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +253,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarkalabs.DynamicCoreDataFrameworkPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7D3B3DBD1CD7813E00C17768 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -280,6 +295,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D3B3DBE1CD7826A00C17768 /* PersonModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D3B3DBF1CD7826A00C17768 /* PersonModel.xcdatamodel */,
+			);
+			currentVersion = 7D3B3DBF1CD7826A00C17768 /* PersonModel.xcdatamodel */;
+			path = PersonModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7D3B3DAA1CD7813E00C17768 /* Project object */;
 }
